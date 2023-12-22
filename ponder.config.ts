@@ -41,16 +41,16 @@ export default createConfig({
       address: "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
       network: {
         mainnet: {
-          // startBlock: Number(latestBlockMainnet.number) - numberOfBlocks,
+          startBlock: Number(latestBlockMainnet.number) - numberOfBlocks,
         },
         base: {
-          // startBlock: Number(latestBlockBase.number) - numberOfBlocks,
+          startBlock: Number(latestBlockBase.number) - numberOfBlocks,
         },
         optimism: {
-          // startBlock: Number(latestBlockOptimism.number) - numberOfBlocks,
+          startBlock: Number(latestBlockOptimism.number) - numberOfBlocks,
         },
         zora: {
-          // startBlock: Number(latestBlockZora.number) - numberOfBlocks,
+          startBlock: Number(latestBlockZora.number) - numberOfBlocks,
         },
       },
     },
