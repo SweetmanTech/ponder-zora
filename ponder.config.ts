@@ -14,24 +14,28 @@ const latestBlockOptimism = await createPublicClient({
 const latestBlockZora = await createPublicClient({
   transport: http(process.env.PONDER_RPC_URL_7777777),
 }).getBlock();
-const numberOfBlocks = 1000000
+const numberOfBlocks = 1000
 
 export default createConfig({
   networks: {
     mainnet: {
       chainId: 1,
+      maxHistoricalTaskConcurrency: 8,
       transport: http(process.env.PONDER_RPC_URL_1),
     },
     base: {
+      maxHistoricalTaskConcurrency: 8,
       chainId: 8453,
       transport: http(process.env.PONDER_RPC_URL_8453),
     },
     optimism: {
       chainId: 10,
+      maxHistoricalTaskConcurrency: 8,
       transport: http(process.env.PONDER_RPC_URL_10),
     },
     zora: {
       chainId: 7777777,
+      maxHistoricalTaskConcurrency: 2,
       transport: http(process.env.PONDER_RPC_URL_7777777),
     },
   },
