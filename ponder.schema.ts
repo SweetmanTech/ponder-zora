@@ -16,5 +16,15 @@ export default createSchema((p) => ({
     mintReferralReward: p.bigint(),
     firstMinterReward: p.bigint(),
     zoraReward: p.bigint(),
+  }),
+  SetupNewToken: p.createTable({
+    id: p.string(),
+    timestamp: p.bigint(),
+    chain: p.string(),
+    contractAddress: p.string(),
+    tokenId: p.bigint(),
+    sender: p.string(),
+    newURI: p.string(),
+    maxSupply: p.bigint()
   })
 }));
