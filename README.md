@@ -1,12 +1,6 @@
-# Ponder
+# Ponder Zora
 
-[![CI status][ci-badge]][ci-url]
-[![Version][version-badge]][version-url]
-
-[![Telegram chat][tg-badge]][tg-url]
-[![License][license-badge]][license-url]
-
-Ponder is an open-source framework for blockchain application backends.
+Ponder Zora is an open-source implementation of Ponder for Zora Protocol Rewards on Base, OP Mainnet, Zora & Ethereum.
 
 ## Quickstart
 
