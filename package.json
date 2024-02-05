@@ -6,11 +6,12 @@
     "dev": "ponder dev",
     "start": "ponder start",
     "codegen": "ponder codegen",
+    "serve": "ponder serve",
     "lint": "eslint .",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@ponder/core": "^0.1.2",
+    "@ponder/core": "^0.1.9",
     "viem": "^1.19.9"
   },
   "devDependencies": {
