@@ -8,8 +8,7 @@ const trasportOpts = {
   retryCount: 10,
   timeout: 100_000
 }
-console.log(process.env.PONDER_RPC_URL_1_FALLBACK)
-console.log(process.env)
+
 const latestBlockMainnet = await createPublicClient({
   transport: fallback([http(process.env.PONDER_RPC_URL_1_FALLBACK, trasportOpts),http(process.env.PONDER_RPC_URL_1, trasportOpts), http(process.env.PONDER_ETH_INFURA, trasportOpts)],{rank:true}),
 }).getBlock();
